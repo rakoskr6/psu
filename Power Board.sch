@@ -647,23 +647,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="-15.24" y1="27.94" x2="-15.24" y2="17.78" width="0.127" layer="51"/>
 <text x="-20.32" y="-6.35" size="1.778" layer="21">&gt;NAME</text>
 </package>
-<package name="TRANSFORMER">
-<pad name="N" x="0" y="0" drill="2.5"/>
-<pad name="G" x="10" y="0" drill="2.5"/>
-<pad name="L" x="-10" y="0" drill="2.5"/>
-<pad name="+" x="-5" y="5" drill="2.5"/>
-<pad name="-" x="5" y="5" drill="2.5"/>
-<text x="-13" y="0" size="1.27" layer="21">L</text>
-<text x="7" y="0" size="1.27" layer="21">N</text>
-<text x="-6" y="0" size="1.27" layer="21">GND</text>
-<text x="-8" y="6" size="1.27" layer="21">+</text>
-<text x="7" y="6" size="1.27" layer="21">-</text>
-<wire x1="-15" y1="-3" x2="13" y2="-3" width="0.127" layer="21"/>
-<wire x1="13" y1="-3" x2="13" y2="8" width="0.127" layer="21"/>
-<wire x1="13" y1="8" x2="-15" y2="8" width="0.127" layer="21"/>
-<wire x1="-15" y1="8" x2="-15" y2="-3" width="0.127" layer="21"/>
-<text x="-15" y="3" size="1.27" layer="21">&gt;NAME</text>
-</package>
 <package name="DIODE">
 <smd name="A" x="0" y="0" dx="1.5" dy="3.6" layer="1"/>
 <smd name="C" x="4.5" y="0" dx="1.5" dy="3.6" layer="1"/>
@@ -853,6 +836,23 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="8" y1="-5" x2="-2" y2="-5" width="0.127" layer="21"/>
 <text x="-1" y="-7" size="1.27" layer="21">&gt;NAME</text>
 </package>
+<package name="TRANSFORMER">
+<pad name="GND" x="0" y="0" drill="2.5"/>
+<pad name="N" x="10" y="0" drill="2.5"/>
+<pad name="L" x="-10" y="0" drill="2.5"/>
+<pad name="+" x="-5" y="5" drill="2.5"/>
+<pad name="-" x="5" y="5" drill="2.5"/>
+<text x="-13" y="0" size="1.27" layer="21">L</text>
+<text x="7" y="0" size="1.27" layer="21">N</text>
+<text x="-6" y="0" size="1.27" layer="21">GND</text>
+<text x="-8" y="6" size="1.27" layer="21">+</text>
+<text x="7" y="6" size="1.27" layer="21">-</text>
+<wire x1="-15" y1="-3" x2="13" y2="-3" width="0.127" layer="21"/>
+<wire x1="13" y1="-3" x2="13" y2="8" width="0.127" layer="21"/>
+<wire x1="13" y1="8" x2="-15" y2="8" width="0.127" layer="21"/>
+<wire x1="-15" y1="8" x2="-15" y2="-3" width="0.127" layer="21"/>
+<text x="-15" y="3" size="1.27" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LINEARREGULATOR">
@@ -903,25 +903,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pin name="LINE" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
 <text x="0" y="7.62" size="1.778" layer="94">+</text>
 <text x="0.508" y="0.762" size="1.778" layer="94">-</text>
-</symbol>
-<symbol name="TRANSFORMER">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.254" layer="94" curve="180"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.254" layer="94" curve="180"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94" curve="180"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94" curve="180"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94" curve="-180"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94" curve="-180"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94" curve="-180"/>
-<text x="10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="5" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="2" x="-5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="3" x="5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="4" x="5.08" y="0" visible="off" length="middle"/>
 </symbol>
 <symbol name="DIODE">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -976,6 +957,25 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="-5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="O" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="TRANSFORMER">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94" curve="-180"/>
+<text x="10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="5" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="2" x="-5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
+<pin name="3" x="5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
+<pin name="4" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1040,25 +1040,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="GROUND" pad="P$2"/>
 <connect gate="G$1" pin="LINE" pad="P$3"/>
 <connect gate="G$1" pin="NEUTRAL" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TRANSFORMER">
-<gates>
-<gate name="G$1" symbol="TRANSFORMER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TRANSFORMER">
-<connects>
-<connect gate="G$1" pin="1" pad="L"/>
-<connect gate="G$1" pin="2" pad="N"/>
-<connect gate="G$1" pin="3" pad="-"/>
-<connect gate="G$1" pin="4" pad="G"/>
-<connect gate="G$1" pin="5" pad="+"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1151,6 +1132,25 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connects>
 <connect gate="G$1" pin="O" pad="P$1"/>
 <connect gate="G$1" pin="P" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSFORMER">
+<gates>
+<gate name="G$1" symbol="TRANSFORMER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TRANSFORMER">
+<connects>
+<connect gate="G$1" pin="1" pad="L"/>
+<connect gate="G$1" pin="2" pad="N"/>
+<connect gate="G$1" pin="3" pad="-"/>
+<connect gate="G$1" pin="4" pad="GND"/>
+<connect gate="G$1" pin="5" pad="+"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3859,7 +3859,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value="10uF"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value="10uF"/>
 <part name="U$3" library="PowerSupply" deviceset="C14_POWER_CONNECTOR" device=""/>
-<part name="U$4" library="PowerSupply" deviceset="TRANSFORMER" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$5" library="PowerSupply" deviceset="DIODE" device=""/>
 <part name="U$6" library="PowerSupply" deviceset="DIODE" device=""/>
@@ -3947,6 +3946,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$21" library="PowerSupply" deviceset="DIODE" device=""/>
 <part name="C17" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value="2.2uF"/>
 <part name="C18" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value="2.2uF"/>
+<part name="U$4" library="PowerSupply" deviceset="TRANSFORMER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3969,7 +3969,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C5" gate="G$1" x="406.4" y="-99.06"/>
 <instance part="C6" gate="G$1" x="419.1" y="-86.36"/>
 <instance part="U$3" gate="G$1" x="-22.86" y="50.8"/>
-<instance part="U$4" gate="G$1" x="12.7" y="50.8"/>
 <instance part="GND1" gate="1" x="27.94" y="48.26"/>
 <instance part="U$5" gate="G$1" x="50.8" y="68.58"/>
 <instance part="U$6" gate="G$1" x="50.8" y="40.64"/>
@@ -4072,6 +4071,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$21" gate="G$1" x="406.4" y="-73.66" rot="R270"/>
 <instance part="C17" gate="G$1" x="406.4" y="-35.56"/>
 <instance part="C18" gate="G$1" x="447.04" y="-35.56"/>
+<instance part="U$4" gate="G$1" x="12.7" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -4079,16 +4079,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$2" class="0">
 <segment>
 <wire x1="-20.32" y1="53.34" x2="-20.32" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="NEUTRAL"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="22.86" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -4238,10 +4234,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="-137.16" y1="-45.72" x2="-137.16" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="22.86" y1="50.8" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="4"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="5"/>
 <wire x1="17.78" y1="58.42" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="A"/>
 <wire x1="17.78" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
@@ -4249,6 +4249,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="43.18" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="55.88" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
 <junction x="43.18" y="68.58"/>
+<pinref part="U$4" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="POS_IN" class="0">
@@ -4287,11 +4288,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$8" gate="G$1" pin="A"/>
 <wire x1="53.34" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="40.64" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="43.18" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="35.56" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
 <junction x="63.5" y="40.64"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4787,7 +4788,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$14" gate="G$1" pin="O"/>
 <pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET1" class="0">
