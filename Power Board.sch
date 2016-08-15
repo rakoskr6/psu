@@ -4188,11 +4188,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="185.42" y1="111.76" x2="215.9" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="111.76" x2="215.9" y2="104.14" width="0.1524" layer="91"/>
 <junction x="185.42" y="111.76"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
 <junction x="185.42" y="104.14"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<junction x="167.64" y="104.14"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -4392,11 +4394,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="P+4" gate="G$1" pin="3.3V"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="127" y1="119.38" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="3.3V_LINEAR_REG" gate="G$1" pin="OUT"/>
 <wire x1="114.3" y1="124.46" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="127" y1="124.46" x2="127" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="127" y1="119.38" x2="127" y2="124.46" width="0.1524" layer="91"/>
+<junction x="127" y="124.46"/>
 </segment>
 <segment>
 <wire x1="-96.52" y1="-132.08" x2="-96.52" y2="-144.78" width="0.1524" layer="91"/>
@@ -4567,12 +4570,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$16" gate="G$1" pin="7_AN"/>
 <wire x1="-50.8" y1="-93.98" x2="-58.42" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="-93.98" x2="-58.42" y2="-73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="-48.26" y1="-83.82" x2="-86.36" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CUR_SENS_+" class="0">
@@ -4851,6 +4848,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-53.34" y1="-76.2" x2="-53.34" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="U$16" gate="G$1" pin="DP"/>
 <wire x1="-53.34" y1="-73.66" x2="-50.8" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
+<pinref part="U$16" gate="G$1" pin="G"/>
+<wire x1="-86.36" y1="-83.82" x2="-50.8" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
