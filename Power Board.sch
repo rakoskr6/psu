@@ -679,20 +679,20 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="-1" y="2" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="4-DIGIT_7-SEG">
-<pad name="P$1" x="0" y="0" drill="0.5"/>
-<pad name="P$2" x="2.54" y="0" drill="0.5"/>
-<pad name="P$3" x="5.08" y="0" drill="0.5"/>
-<pad name="P$4" x="7.62" y="0" drill="0.5"/>
-<pad name="P$5" x="10.16" y="0" drill="0.5"/>
-<pad name="P$6" x="12.7" y="0" drill="0.5"/>
-<pad name="P$7" x="15.24" y="0" drill="0.5"/>
-<pad name="P$14" x="0" y="15.24" drill="0.5"/>
-<pad name="P$13" x="2.54" y="15.24" drill="0.5"/>
-<pad name="P$12" x="5.08" y="15.24" drill="0.5"/>
-<pad name="P$11" x="7.62" y="15.24" drill="0.5"/>
-<pad name="P$10" x="10.16" y="15.24" drill="0.5"/>
-<pad name="P$9" x="12.7" y="15.24" drill="0.5"/>
-<pad name="P$8" x="15.24" y="15.24" drill="0.5"/>
+<pad name="P$1" x="0" y="0" drill="0.7"/>
+<pad name="P$2" x="2.54" y="0" drill="0.7"/>
+<pad name="P$3" x="5.08" y="0" drill="0.7"/>
+<pad name="P$4" x="7.62" y="0" drill="0.7"/>
+<pad name="P$5" x="10.16" y="0" drill="0.7"/>
+<pad name="P$6" x="12.7" y="0" drill="0.7"/>
+<pad name="P$7" x="15.24" y="0" drill="0.7"/>
+<pad name="P$14" x="0" y="15.24" drill="0.7"/>
+<pad name="P$13" x="2.54" y="15.24" drill="0.7"/>
+<pad name="P$12" x="5.08" y="15.24" drill="0.7"/>
+<pad name="P$11" x="7.62" y="15.24" drill="0.7"/>
+<pad name="P$10" x="10.16" y="15.24" drill="0.7"/>
+<pad name="P$9" x="12.7" y="15.24" drill="0.7"/>
+<pad name="P$8" x="15.24" y="15.24" drill="0.7"/>
 <wire x1="-17" y1="-3" x2="33" y2="-3" width="0.127" layer="21"/>
 <wire x1="33" y1="-3" x2="33" y2="18.2" width="0.127" layer="21"/>
 <wire x1="-17" y1="18.2" x2="-17" y2="-3" width="0.127" layer="21"/>
@@ -817,11 +817,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <smd name="P$2" x="0" y="-6.3" dx="1.5" dy="2" layer="1"/>
 <smd name="P$3" x="2.3" y="-6.3" dx="1.5" dy="2" layer="1"/>
 <smd name="P$1" x="-2.3" y="-6.3" dx="1.5" dy="2" layer="1"/>
-<wire x1="6" y1="-5.6" x2="6" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="6" y1="-0.4" x2="-6" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="-6" y1="-0.4" x2="-6" y2="-5.6" width="0.127" layer="21"/>
-<wire x1="-6" y1="-5.6" x2="6" y2="-5.6" width="0.127" layer="21"/>
-<text x="-5" y="-9" size="1.27" layer="21">&gt;NAME</text>
+<wire x1="4" y1="-5.6" x2="4" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="4" y1="-0.4" x2="-4" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-0.4" x2="-4" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="-4" y1="-5.6" x2="4" y2="-5.6" width="0.127" layer="21"/>
+<text x="-4" y="-9" size="1.016" layer="21">&gt;NAME</text>
 </package>
 <package name="SWITCH">
 <pad name="P$4" x="0" y="0" drill="1.655"/>
@@ -1078,7 +1078,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="4-DIGIT_7_SEG">
+<deviceset name="4-DIGIT_7_SEG" prefix="U">
 <gates>
 <gate name="G$1" symbol="4-DIGIT_7-SEGMENT" x="0" y="0"/>
 </gates>
@@ -1130,8 +1130,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <devices>
 <device name="" package="SWITCH">
 <connects>
-<connect gate="G$1" pin="O" pad="P$1"/>
-<connect gate="G$1" pin="P" pad="P$2"/>
+<connect gate="G$1" pin="O" pad="P$4"/>
+<connect gate="G$1" pin="P" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
